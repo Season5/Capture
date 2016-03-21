@@ -25,8 +25,8 @@ public class SplashScreen extends Activity {
 
     private Handler mHandler = new Handler() {
         public void handleMessage(android.os.Message msg) {
-            startActivity(new Intent(SplashScreen.this, GalleryActivity.class));
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+            startActivity(new Intent(SplashScreen.this, MainActivity.class));
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
         }
 
